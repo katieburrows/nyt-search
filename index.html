@@ -8,27 +8,60 @@
     <link rel = "stylesheet" type = "text/css" href = "style.css">
 </head>
     <body>
-        <!-- <div class="jumbotron">
-            <h1 class="display-4">Hello, world!</h1>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-            <hr class="my-4">
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-        </div> -->
         <div id = "container">
-            <div class = "row">
-                <div class = "col-md-1"></div>
-                    <div class = "col-md-10">
-                        <div class="jumbotron jumbotron-fluid">
-                            <div class="container">
-                            <h1 class="display-4">New York Times Article Search</h1>
-                            <p class="lead">This app's technology is:  Bootstrap, JavaScript, APIs, AJAX calls, and jQuery.</p>
-                            </div>
-                        </div>
-                    </div>
-                <div class = "col-md-1"></div>
-            </div>
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <h1 class="display-4">New York Times Search</h1>
+                    <p class="lead">Please enter a search term, and the number of articles you want to retrieve.  Optionally, you may enter in a start year or an end year for your search.</p>
+                </div>
+            </div> 
         </div>
+
+        <section id = "searchParameters">
+            <div class="card">
+                <div class="card-header">Search Parameters</div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Search Term:</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Search something like 'stock market' here!">
+                            </div>
+
+                            <select class="custom-select">
+                                <option selected>Open this to select the number of articles</option>
+                                <option value="1">1</option>
+                                <option value="5">5</option>
+                                <option value="10">10</option>
+                            </select>
+
+                            <div class="form-group">
+                                <label for="formGroupExampleInput2">Starting Year (Optional):</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="example: 1990">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="formGroupExampleInput2">Ending Year (Optional):</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="example: 2019">
+                            </div>
+
+                            <button type="button" class="btn btn-outline-secondary">Search</button>
+                            <button type="button" class="btn btn-outline-danger">Clear</button>
+                        </form>
+                    </div>
+            </div>
+        </section>
+        <section id = "results">
+            <div class="card">
+                <div class="card-header">Top Articles</div>
+                    <div class="card-body">
+                    </div>
+            </div>
+        </section>
+        
+
+        
+                  
+               
     
     
     
